@@ -37,8 +37,9 @@ export async function sendNewsletterEmail(recipientEmail: string) {
       `,
     });
     return { success: true, messageId: info.messageId };
-  } catch (error) {
+  } catch (error: unknown) {
     console.error('Error sending email:', error);
-    return { success: false, error: error.message };
+    const errorMessage = error instanceof Error ? error.message : 'An unknown error occurred';
+    return { success: false, error: errorMessage };
   }
 } 
