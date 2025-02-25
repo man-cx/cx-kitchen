@@ -1,11 +1,11 @@
 ---
-title: "Getting Started with CX Kitchen"
-date: "2024-02-24"
+title: "Getting Started with CX-Kitchen"
+date: "2024-03-20"
 excerpt: "A guide to making the most of our platform and services."
 image: "/images/blog/blog-2.jpg"
 ---
 
-# Getting Started with CX Kitchen
+# Getting Started with CX-Kitchen
 
 Welcome to our platform! This guide will help you get started and make the most of what we offer.
 

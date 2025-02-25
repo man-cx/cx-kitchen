@@ -1,38 +1,36 @@
 'use client';
 
-import Link from 'next/link';
-import { useState } from 'react';
+import { Logo } from './Logo'
+import Link from 'next/link'
+import { useState } from 'react'
 
 export default function Header() {
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [isMenuOpen, setIsMenuOpen] = useState(false)
 
   return (
-    <header className="bg-white shadow-sm sticky top-0 z-50">
+    <header className="bg-[#FFF4E6] shadow-lg sticky top-0 z-50 backdrop-blur-sm bg-opacity-95">
       <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between h-16">
+        <div className="flex justify-between h-20">
           <div className="flex items-center">
-            <Link href="/" className="flex items-center">
-              <span className="text-2xl font-bold text-gray-900">CX Kitchen</span>
+            <Link href="/" className="group">
+              <Logo />
             </Link>
           </div>
           
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-8">
-            <Link href="/" className="text-gray-700 hover:text-gray-900 font-medium">
-              Home
+            <Link href="/solutions" className="text-[#333333] hover:text-[#D35400] font-medium transition-colors">
+              Solutions
             </Link>
-            <Link href="/blog" className="text-gray-700 hover:text-gray-900 font-medium">
-              Blog
+            <Link href="/pricing" className="text-[#333333] hover:text-[#D35400] font-medium transition-colors">
+              Pricing
             </Link>
-            <Link href="/recipes" className="text-gray-700 hover:text-gray-900 font-medium">
-              Recipes
-            </Link>
-            <Link href="/about" className="text-gray-700 hover:text-gray-900 font-medium">
+            <Link href="/about" className="text-[#333333] hover:text-[#D35400] font-medium transition-colors">
               About
             </Link>
             <Link href="/contact" 
-              className="bg-blue-600 text-white px-4 py-2 rounded-md hover:bg-blue-700 transition-colors">
-              Contact
+              className="bg-[#F1C40F] text-[#333333] px-6 py-2 rounded-md hover:bg-[#D35400] hover:text-[#FFF4E6] transition-colors shadow-md hover:shadow-lg">
+              Book a Demo
             </Link>
           </div>
 
@@ -40,7 +38,7 @@ export default function Header() {
           <div className="md:hidden flex items-center">
             <button
               onClick={() => setIsMenuOpen(!isMenuOpen)}
-              className="inline-flex items-center justify-center p-2 rounded-md text-gray-700 hover:text-gray-900 hover:bg-gray-100 focus:outline-none"
+              className="inline-flex items-center justify-center p-2 rounded-md text-[#333333] hover:text-[#D35400] hover:bg-[#FFF4E6]/50 focus:outline-none transition-colors"
             >
               <svg
                 className="h-6 w-6"
@@ -72,30 +70,26 @@ export default function Header() {
         {isMenuOpen && (
           <div className="md:hidden">
             <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
-              <Link href="/" 
-                className="block px-3 py-2 rounded-md text-gray-700 hover:text-gray-900 hover:bg-gray-50">
-                Home
+              <Link href="/solutions" 
+                className="block px-3 py-2 rounded-md text-[#333333] hover:text-[#D35400] hover:bg-[#FFF4E6]/50 transition-colors">
+                Solutions
               </Link>
-              <Link href="/blog" 
-                className="block px-3 py-2 rounded-md text-gray-700 hover:text-gray-900 hover:bg-gray-50">
-                Blog
-              </Link>
-              <Link href="/recipes" 
-                className="block px-3 py-2 rounded-md text-gray-700 hover:text-gray-900 hover:bg-gray-50">
-                Recipes
+              <Link href="/pricing" 
+                className="block px-3 py-2 rounded-md text-[#333333] hover:text-[#D35400] hover:bg-[#FFF4E6]/50 transition-colors">
+                Pricing
               </Link>
               <Link href="/about" 
-                className="block px-3 py-2 rounded-md text-gray-700 hover:text-gray-900 hover:bg-gray-50">
+                className="block px-3 py-2 rounded-md text-[#333333] hover:text-[#D35400] hover:bg-[#FFF4E6]/50 transition-colors">
                 About
               </Link>
               <Link href="/contact" 
-                className="block px-3 py-2 rounded-md bg-blue-600 text-white hover:bg-blue-700">
-                Contact
+                className="block px-3 py-2 rounded-md bg-[#F1C40F] text-[#333333] hover:bg-[#D35400] hover:text-[#FFF4E6] transition-colors shadow-md">
+                Book a Demo
               </Link>
             </div>
           </div>
         )}
       </nav>
     </header>
-  );
+  )
 } 
