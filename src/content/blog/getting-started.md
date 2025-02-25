@@ -2,7 +2,7 @@
 title: "Getting Started with CX-Kitchen"
 date: "2024-03-20"
 excerpt: "A guide to making the most of our platform and services."
-image: "/images/blog/blog-2.jpg"
+image: "https://images.unsplash.com/photo-1664575198308-3959904fa430?w=800&auto=format&fit=crop&q=60"
 ---
 
 # Getting Started with CX-Kitchen
