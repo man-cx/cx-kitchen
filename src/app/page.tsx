@@ -1,6 +1,7 @@
 import React from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
+import NewsletterForm from '@/components/NewsletterForm'
 
 export const Logo = () => (
   <div className="flex items-center space-x-3">
@@ -152,6 +153,13 @@ export default function Home() {
           ))}
         </div>
       </div>
+
+      {/* Newsletter Section */}
+      <section className="py-16 bg-gray-50">
+        <div className="container mx-auto px-4">
+          <NewsletterForm />
+        </div>
+      </section>
     </div>
   )
 } 
