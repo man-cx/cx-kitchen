@@ -4,12 +4,12 @@ import { Logo } from '../page';
 export default function Footer() {
   return (
     <footer className="bg-[#FFF4E6] border-t border-[#F1C40F]">
-      <div className="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
+      <div className="max-w-7xl mx-auto py-16 px-4 sm:px-6 lg:px-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 md:gap-8">
           {/* Brand section */}
-          <div className="space-y-4">
+          <div className="space-y-6">
             <Logo />
-            <p className="text-[#333333]">
+            <p className="text-[#333333] text-sm leading-relaxed">
               Empowering businesses with AI-powered solutions for streamlined workflows and enhanced productivity.
             </p>
             <div className="flex space-x-6">
@@ -29,23 +29,23 @@ export default function Footer() {
           </div>
 
           {/* Solutions */}
-          <div>
-            <h3 className="text-sm font-semibold text-[#D35400] tracking-wider uppercase">
+          <div className="md:ml-8">
+            <h3 className="text-sm font-semibold text-[#D35400] tracking-wider uppercase mb-6">
               Solutions
             </h3>
-            <ul className="mt-4 space-y-4">
+            <ul className="space-y-4">
               <li>
-                <Link href="/solutions/workflow-automation" className="text-base text-[#333333] hover:text-[#D35400] transition-colors">
+                <Link href="/solutions/workflow-automation" className="text-sm text-[#333333] hover:text-[#D35400] transition-colors">
                   Workflow Automation
                 </Link>
               </li>
               <li>
-                <Link href="/solutions/client-management" className="text-base text-[#333333] hover:text-[#D35400] transition-colors">
+                <Link href="/solutions/client-management" className="text-sm text-[#333333] hover:text-[#D35400] transition-colors">
                   Client Management
                 </Link>
               </li>
               <li>
-                <Link href="/solutions/productivity-tools" className="text-base text-[#333333] hover:text-[#D35400] transition-colors">
+                <Link href="/solutions/productivity-tools" className="text-sm text-[#333333] hover:text-[#D35400] transition-colors">
                   Productivity Tools
                 </Link>
               </li>
@@ -53,18 +53,18 @@ export default function Footer() {
           </div>
 
           {/* Company */}
-          <div>
-            <h3 className="text-sm font-semibold text-[#D35400] tracking-wider uppercase">
+          <div className="md:ml-8">
+            <h3 className="text-sm font-semibold text-[#D35400] tracking-wider uppercase mb-6">
               Company
             </h3>
-            <ul className="mt-4 space-y-4">
+            <ul className="space-y-4">
               <li>
-                <Link href="/about" className="text-base text-[#333333] hover:text-[#D35400] transition-colors">
+                <Link href="/about" className="text-sm text-[#333333] hover:text-[#D35400] transition-colors">
                   About Us
                 </Link>
               </li>
               <li>
-                <Link href="/contact" className="text-base text-[#333333] hover:text-[#D35400] transition-colors">
+                <Link href="/contact" className="text-sm text-[#333333] hover:text-[#D35400] transition-colors">
                   Contact
                 </Link>
               </li>
@@ -72,23 +72,23 @@ export default function Footer() {
           </div>
 
           {/* Newsletter */}
-          <div>
-            <h3 className="text-sm font-semibold text-[#D35400] tracking-wider uppercase">
+          <div className="md:ml-8">
+            <h3 className="text-sm font-semibold text-[#D35400] tracking-wider uppercase mb-6">
               Stay Updated
             </h3>
-            <p className="mt-4 text-base text-[#333333]">
+            <p className="text-sm text-[#333333] mb-4 leading-relaxed">
               Get the latest updates on AI innovations and productivity solutions.
             </p>
-            <form className="mt-4">
+            <form className="space-y-2">
               <div className="flex">
                 <input
                   type="email"
-                  className="form-input min-w-0 flex-1 block w-full px-3 py-2 rounded-l-md border border-[#F1C40F] text-[#333333] placeholder-[#666666] focus:ring-[#D35400] focus:border-[#D35400] sm:text-sm"
+                  className="form-input min-w-0 flex-1 block w-full px-4 py-2.5 rounded-l-md border border-[#F1C40F] text-[#333333] placeholder-[#666666] focus:ring-[#D35400] focus:border-[#D35400] text-sm"
                   placeholder="Enter your email"
                 />
                 <button
                   type="submit"
-                  className="-ml-px relative inline-flex items-center px-4 py-2 border border-transparent text-sm font-medium rounded-r-md text-[#333333] bg-[#F1C40F] hover:bg-[#D35400] hover:text-[#FFF4E6] focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#D35400] transition-colors shadow-sm hover:shadow-md"
+                  className="-ml-px relative inline-flex items-center px-4 py-2.5 border border-transparent text-sm font-medium rounded-r-md text-[#333333] bg-[#F1C40F] hover:bg-[#D35400] hover:text-[#FFF4E6] focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#D35400] transition-colors shadow-sm hover:shadow-md"
                 >
                   Subscribe
                 </button>
@@ -97,8 +97,8 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="mt-8 border-t border-[#F1C40F] pt-8">
-          <p className="text-base text-[#666666] text-center">
+        <div className="mt-12 pt-8 border-t border-[#F1C40F]">
+          <p className="text-sm text-[#666666] text-center">
             © {new Date().getFullYear()} CX-Kitchen. All rights reserved.
           </p>
         </div>
