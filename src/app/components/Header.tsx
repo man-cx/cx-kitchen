@@ -22,11 +22,11 @@ export default function Header() {
             <Link href="/solutions" className="text-[#333333] hover:text-[#D35400] font-medium transition-colors">
               Solutions
             </Link>
-            <Link href="/pricing" className="text-[#333333] hover:text-[#D35400] font-medium transition-colors">
-              Pricing
-            </Link>
             <Link href="/about" className="text-[#333333] hover:text-[#D35400] font-medium transition-colors">
               About
+            </Link>
+            <Link href="/blog" className="text-[#333333] hover:text-[#D35400] font-medium transition-colors">
+              Blog
             </Link>
             <Link href="/contact" 
               className="bg-[#F1C40F] text-[#333333] px-6 py-2 rounded-md hover:bg-[#D35400] hover:text-[#FFF4E6] transition-colors shadow-md hover:shadow-lg">
@@ -74,13 +74,13 @@ export default function Header() {
                 className="block px-3 py-2 rounded-md text-[#333333] hover:text-[#D35400] hover:bg-[#FFF4E6]/50 transition-colors">
                 Solutions
               </Link>
-              <Link href="/pricing" 
-                className="block px-3 py-2 rounded-md text-[#333333] hover:text-[#D35400] hover:bg-[#FFF4E6]/50 transition-colors">
-                Pricing
-              </Link>
               <Link href="/about" 
                 className="block px-3 py-2 rounded-md text-[#333333] hover:text-[#D35400] hover:bg-[#FFF4E6]/50 transition-colors">
                 About
+              </Link>
+              <Link href="/blog" 
+                className="block px-3 py-2 rounded-md text-[#333333] hover:text-[#D35400] hover:bg-[#FFF4E6]/50 transition-colors">
+                Blog
               </Link>
               <Link href="/contact" 
                 className="block px-3 py-2 rounded-md bg-[#F1C40F] text-[#333333] hover:bg-[#D35400] hover:text-[#FFF4E6] transition-colors shadow-md">
